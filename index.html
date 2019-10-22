@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>AluBhorta</title>
     <!-- stylesheets -->
     <link
       rel="stylesheet"
@@ -15,16 +15,27 @@
   </head>
   <body>
     <!-- main -->
+    <div class="logo-holder"></div>
     <main class="body-wrapper valign-wrapper">
+        
       <div class="container">
+        <!-- center-align -->
+        
         <div class="center-align">
+          
           <!-- header -->
-          <h1 class="white-text soon">Coming Soon...</h1>
+          <h1
+            class="white-text soon tooltipped"
+            data-position="bottom"
+            data-tooltip="not really"
+          >
+            Coming Soon!
+          </h1>
           <!-- ./header -->
 
           <!-- preloader -->
           <div class="preloader-wrapper big active">
-            <div class="spinner-layer spinner-green">
+            <div class="spinner-layer spinner-green-only">
               <div class="circle-clipper left">
                 <div class="circle"></div>
               </div>
@@ -36,28 +47,41 @@
               </div>
             </div>
           </div>
+          <!-- ./preloader -->
         </div>
-        <!-- ./preloader -->
+        <!-- ./center-align -->
       </div>
       <!-- ./container -->
     </main>
     <!-- ./main -->
 
     <!-- footer -->
-    <footer class="page-footer ">
+    <footer class="page-footer">
       <div class="footer-copyright">
         <div class="container">
-          <span>AluBhorta &copy; 2019</span>
+          <div class="left">
+            <p><strong>AluBhorta &copy; 2019</strong></p>
+          </div>
           <div class="right">
             <a
               href="https://github.com/AluBhorta/alubhorta.com"
-              class="btn waves-effect waves-red"
-              >View Source</a
+              class="btn green accent-3  waves-effect waves-blue"
+              >Source Code</a
             >
           </div>
         </div>
       </div>
     </footer>
     <!-- ./footer -->
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".tooltipped");
+        var instances = M.Tooltip.init(elems);
+      });
+    </script>
+    <!-- ./scripts -->
   </body>
 </html>
