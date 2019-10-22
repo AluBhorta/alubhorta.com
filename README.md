@@ -2,4 +2,4 @@
 
 Source code of alubhorta\.com.
 
-Live at [https://alubhorta.github.io/alubhorta.com/](https://alubhorta.github.io/alubhorta.com/).
+Live at [https://www.alubhorta.com/](https://www.alubhorta.com/).
